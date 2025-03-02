@@ -30,9 +30,9 @@ public class User extends BaseEntity {
     @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "roles", nullable = false)
+    @Column(name = "role", nullable = false)
     @Enumerated(EnumType.STRING) //DB에 ENUM 값이 String으로 저장됨
-    private UserRole roles;
+    private UserRole role;
 
     @Column(name = "deleted_at")
     private LocalDateTime deletedAt;
